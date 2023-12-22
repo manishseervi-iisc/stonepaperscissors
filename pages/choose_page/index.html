@@ -3,16 +3,23 @@
     <head>
         <title>Choose</title>
         <meta charset="utf-8">
+        <link href="./styles.css" rel="stylesheet">
 
     </head>
     <body>
-        <p>Congrats you won the toss</p>
-        <p>Choose bat or bowl</p>
-        <button id="bat">Bat</button>
-        <button id="bowl">Bowl</button>
-        <p id="choose_result"></p>
-        <a id="1" href="../batting1/index.html" style="display:none;">Start Batting</a>
-        <a id="2" href="../bowling1/index.html" style="display: none;">Start bowling</a>
+        <div id="win">
+            <p class="winn">Congrats!! </p>
+            <p class="winn"> You won the toss</p>
+        </div>
+        <div id="images">
+            <img src="../../images/batting.png" id="bat" alt="batting">
+            <img src="../../images/bowling.png" id="bowl" alt="bowling">
+        </div>
+        <div id="result">
+            <p id="choose_result"></p>
+            <a id="sbat" href="../batting1/index.html" style="display:none;">Start Batting</a>
+            <a id="sbowl" href="../bowling1/index.html" style="display: none;">Start bowling</a>
+        </div>
         <script src="./choose.js"></script>
     </body>
 </html>

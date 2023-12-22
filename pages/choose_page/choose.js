@@ -7,13 +7,14 @@ function printBatBowl(choice){
     
     if(choice=="bat"){
         document.getElementById("choose_result").textContent="You chose to bat";
-        document.getElementById("1").style.display="block";
+        document.getElementById("sbat").style.display="block";
     }
     else {
         document.getElementById("choose_result").textContent="You chose to Bowl";
-    document.getElementById("2").style.display="block";}
+    document.getElementById("sbowl").style.display="block";}
     bat.disabled= true;
     bowl.disabled= true;
+    document.getElementById("images").style.display="none";
     
     
 }
