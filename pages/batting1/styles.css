@@ -1,0 +1,118 @@
+body {
+    height: 100vh;
+    background: url(../../images/bg3.webp) no-repeat  ;
+    background-size: cover;
+    background-position: center 0;
+    overflow: clip;
+    margin: 0;
+    
+}
+
+#inn {
+    
+    font-size: 75px;
+    font-weight: 800;
+    color: navy;
+    margin: 0;
+    text-align: center;
+    
+    
+
+}
+#scorecard {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightblue ;
+    opacity: 0.5;
+    align-items: center;
+    margin: 0;
+    flex-wrap: wrap;
+
+}
+
+#score,#score2 {
+   font-size: 50px;
+   font-weight: 700;
+    margin: 0;
+}
+#score {
+    color: navy;
+    text-align: center;
+    
+}
+#score2{
+    color: lightblue;
+    text-align: center;
+  
+}
+
+#images {
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+    
+    gap:30px;
+    margin: 2%;
+    margin-top: 30px;
+    
+   
+
+}
+.image {
+    width: 8%;
+    border: solid lightblue;
+    border-radius: 10px;
+    margin: 0;
+
+}
+
+img.image:hover {
+    width:10%;
+    
+}
+
+#ball{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20vh;
+    margin-top: 20vh;
+   
+}
+
+
+
+.image2 {
+    height: 20vh;
+    display: none;
+}
+
+#outt {
+
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+#link {
+    text-decoration: none;
+   
+    
+
+    
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+    
+}
+a#link:hover{
+    color: navy;
+    background-color: lightblue;
+    opacity: 50;
+    
+}
