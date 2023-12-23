@@ -1,13 +1,18 @@
-body {
+html {
     height: 100vh;
     background: url(../../images/bg3.webp) no-repeat  ;
-    background-size: cover;
-    background-position: center 0;
-    overflow: clip;
-    margin: 0;
+    background-clip: content-box;
+    background-size:100vw 850px;
     
+    background-position: center 0;
+    overscroll-behavior: none;
+    
+    margin: 0;
+    overflow: scroll;
 }
-
+body{
+    overflow: clip;
+}
 #inn {
     
     font-size: 75px;
@@ -15,6 +20,8 @@ body {
     color: navy;
     margin: 0;
     text-align: center;
+    
+    
     
     
 
@@ -25,8 +32,9 @@ body {
     background-color: lightblue ;
     opacity: 0.5;
     align-items: center;
-    margin: 0;
+    margin: 10px;
     flex-wrap: wrap;
+    
 
 }
 
@@ -34,17 +42,8 @@ body {
    font-size: 50px;
    font-weight: 700;
     margin: 0;
-    text-align: center;
-}
-#score {
     color: navy;
-    
-    
-}
-#score2{
-    color: lightblue;
-    
-  
+    text-align: center;
 }
 
 #images {
@@ -77,43 +76,55 @@ img.image:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20vh;
+    gap: 10vw;
     margin-top: 20vh;
+    margin-right: 2vw;
+    margin-left: 2vw;
+  
    
 }
 
 
 
 .image2 {
-    height: 20vh;
+    height:10vh;
     display: none;
 }
 
-#outt {
+#win,#lose{
+    height: 35vh;
+    display: none;
+}
 
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    gap: 30px;
+#out {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    width: 60%;
+    margin: 10px;
+    background-color: lightblue;
+    color: navy;
+    border-radius: 10px;
+    
+    
+
+}
+#outbox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
     
 }
 
 #link {
     text-decoration: none;
-   
-    
-
-    
     color: white;
     font-size: 50px;
-    font-weight: 800;
-    width: 100%;
     text-align: center;
-    
+    margin-top: 3.5vh;
+
 }
-a#link:hover{
-    color: navy;
+#link:hover {
     background-color: lightblue;
-    opacity: 50;
-    
+    color: navy;
 }
