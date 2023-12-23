@@ -1,9 +1,11 @@
 body {
     height: 100vh;
     background: url(../../images/bg3.webp) no-repeat  ;
-    background-size: cover;
+    background-size: 100vw 825px;
     background-position: center 0;
-    overflow: clip;
+    overflow: scroll;
+    overflow-x: clip;
+    overscroll-behavior: none;
     margin: 0;
     
 }
@@ -77,11 +79,16 @@ img.image:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20vh;
+    gap: 10vw;
     margin-top: 20vh;
+    margin-right: 2vw;
+    margin-left: 2vw;
+  
    
 }
-
+#out{
+    height: 35vh;
+}
 
 
 .image2 {

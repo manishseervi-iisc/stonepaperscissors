@@ -1,9 +1,10 @@
-body {
+#body {
     background: url(../../images/cric-bg.webp) no-repeat;
     background-position: center 0;
     background-size: cover;
     height: 100vh;
-    overflow: clip; 
+    overflow: scroll;
+    overscroll-behavior: none;
 }
 
 #toss {
@@ -14,6 +15,8 @@ body {
     font-size: 75px;
     font-weight: 900;
     margin-bottom: 50vh;
+    margin-top: 5vh;
+    color: rgb(247,54,247);
 }
 
 #choice {
@@ -22,19 +25,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    gap: 50px;
+    gap: 5vh;
 }
 a#head:hover,#tails:hover{
-    background-color: whitesmoke;
-    color: black;
+    background-color: rgb(247,54,247);
+    color: rgb(108,0,138);
    
 }
 
 #head,#tails {
-    font-size: 65px;
+    font-size: 9vh;
     margin: 10px;
-    background-color: transparent;
-    color: white;
+    background-color: rgb(108,0,138);
+    color: rgb(247,54,247);
     border-radius: 5px;
 
 }
@@ -47,22 +50,23 @@ a#head:hover,#tails:hover{
 }
 
 #lose,#choose {
-    color: whitesmoke;
-    font-size: 40px;
+    color: rgb(138, 4, 176);
+    background-color: rgb(247,54,247);
+    font-size: 6vh;
     margin: 2px;
 }
 
 #bat,#bowl {
-    margin-top: 100px;
+    margin-top: 10vh;
     text-decoration: none;
     font-size: 50px;
-    color: whitesmoke;
+    color: rgb(108,0,138);
     border-radius: 5px;
     font-weight: bold;
 
 }
 a#bat:hover,#bowl:hover {
-    background-color: white;
+    background-color:rgb(247,54,247);
     
-    color: black;
+    color: rgb(138, 4, 176);
 }

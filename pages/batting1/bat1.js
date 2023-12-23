@@ -30,10 +30,10 @@ function addRuns(num) {
 function out() {
     document.getElementById("scorecard").style.display="block";
     document.getElementById("images").style.display="none";
-    document.getElementById("ball").style.display="none";
+    document.getElementById("ball").style.justifyContent="space-between";
     document.getElementById("outt").style.display = "flex";
     document.getElementById("score").textContent = `Your score: ${runs}`;
-    
+    document.getElementById("out").style.display="block";
     document.getElementById("score2").style.color="navy";
     document.getElementById("score2").textContent=`Target: ${runs +1}`;
     // Set the value in session storage
