@@ -1,0 +1,121 @@
+body {
+    height: 100vh;
+    background: url(../../images/bg3.webp) no-repeat  ;
+    background-size: 100vw 850px;
+    background-position: center 0;
+    overflow-x: clip;
+    overflow-y: scroll;
+    margin: 0;
+    overscroll-behavior: none;
+    
+}
+
+#inn {
+    
+    font-size: 75px;
+    font-weight: 800;
+    color: navy;
+    margin: 0;
+    text-align: center;
+    
+    
+
+}
+#scorecard {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightblue ;
+    opacity: 0.5;
+    align-items: center;
+    margin: 0;
+    flex-wrap: wrap;
+
+}
+
+#score,#score2 {
+   font-size: 50px;
+   font-weight: 700;
+    margin: 0;
+    text-align: center;
+}
+#score {
+    color: navy;
+    
+    
+}
+#score2{
+    color: lightblue;
+    
+  
+}
+
+#images {
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+    
+    gap:30px;
+    margin: 2%;
+    margin-top: 30px;
+    
+   
+
+}
+.image {
+    width: 8%;
+    border: solid lightblue;
+    border-radius: 10px;
+    margin: 0;
+
+}
+
+img.image:hover {
+    width:10%;
+    
+}
+
+#ball{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20vh;
+    margin-top: 20vh;
+   
+}
+
+
+
+.image2 {
+    height: 10vw;
+    display: none;
+}
+
+#outt {
+
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+#link {
+    text-decoration: none;
+   
+    
+
+    
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+    
+}
+a#link:hover{
+    color: navy;
+    background-color: lightblue;
+    opacity: 50;
+    
+}

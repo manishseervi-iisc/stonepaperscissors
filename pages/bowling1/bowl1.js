@@ -1,20 +1,23 @@
-const r1 = document.getElementById("1");
-const r2 = document.getElementById("2");
-const r3 = document.getElementById("3");
-const r4 = document.getElementById("4");
-const r5 = document.getElementById("5");
-const r6 = document.getElementById("6");
+const r1 = document.getElementById("r1");
+const r2 = document.getElementById("r2");
+const r3 = document.getElementById("r3");
+const r4 = document.getElementById("r4");
+const r5 = document.getElementById("r5");
+const r6 = document.getElementById("r6");
 let runs = 0;
 
 function CheckOut(num) {
+    disappear(k,l);
+    print(num,2);
     const i=CompMove();
+    print(i,1);
     if (num == i) { out(); }
-    else addRuns(i);
+    else addRuns(num);
 }
 
 function CompMove() {
     const i = Math.floor(Math.random() * 6) + 1;
-    document.getElementById("comp").textContent = `Comp played ${i}`
+    
     return i;
 
 }
@@ -25,21 +28,43 @@ function addRuns(num) {
 }
 
 function out() {
-    r1.disabled = true;
-    r2.disabled = true;
-    r3.disabled = true;
-    r4.disabled = true;
-    r5.disabled = true;
-    r6.disabled = true;
-    document.getElementById("out").style.display = "block";
-    document.getElementById("score").textContent = `Computer score is ${runs}`;
-    document.getElementById("link").style.display = "block";
+    document.getElementById("scorecard").style.display="block";
+    document.getElementById("images").style.display="none";
+    document.getElementById("ball").style.display="none";
+    document.getElementById("outt").style.display = "flex";
+    document.getElementById("score").textContent = `Computer score: ${runs}`;
+    
+    document.getElementById("score2").style.color="navy";
+    document.getElementById("score2").textContent=`Target: ${runs +1}`;
     // Set the value in session storage
     sessionStorage.setItem('myValue', `${runs + 1}`);
 
 
 
 }
+let k="s1",l="m1";
+function print(num,num2){
+    if(num2==1){
+        k="s"+num;
+        document.getElementById(k).style.display="block";
+        
+    }
+      else {
+        l="m"+num;
+        document.getElementById(l).style.display="block";
+    }
+    
+}
+
+
+function disappear(str1,str2){
+    document.getElementById(str1).style.display="none";
+    document.getElementById(str2).style.display="none";
+}
+
+
+
+
 
 
 
