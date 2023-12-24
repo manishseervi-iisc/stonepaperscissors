@@ -31,10 +31,13 @@ function compChoose() {
         document.getElementById("bat").style.display = "block";
     }
 }
-
+function tryingRefresh(){
+    if (confirm(`Are you sure you want to restart the game`)) console.log("okay");
+}
 
 
 
 
 head.addEventListener("click", () => toss("head"));
 tails.addEventListener("click", () => toss("tails"));
+document.addEventListener("", tryingRefresh);

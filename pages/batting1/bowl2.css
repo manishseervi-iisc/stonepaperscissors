@@ -10,9 +10,7 @@ html {
     margin: 0;
     overflow: scroll;
 }
-body{
-    overflow: clip;
-}
+
 #inn {
     
     font-size: 75px;
@@ -88,7 +86,7 @@ img.image:hover {
 
 .image2 {
     height:10vh;
-    display: none;
+    
 }
 
 #win,#lose{
@@ -127,4 +125,24 @@ img.image:hover {
 #link:hover {
     background-color: lightblue;
     color: navy;
+}
+
+.box {
+    display: none;
+    flex-direction: column;
+    border: solid 2px lightblue;
+    border-radius: 1vw;
+}
+
+.you,.comp {
+    order: 1;
+    text-align: center;
+    background-color: lightblue;
+    opacity: 50;
+    color: navy;
+    font-weight: 700;
+    font-size: 5vh;
+    margin-bottom: 0;
+    margin-top: 1vh;
+   
 }

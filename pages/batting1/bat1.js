@@ -36,6 +36,7 @@ function out() {
     document.getElementById("out").style.display="block";
     document.getElementById("score2").style.color="navy";
     document.getElementById("score2").textContent=`Target: ${runs +1}`;
+    document.getElementById("ball").style.gap="0"; 
     // Set the value in session storage
     sessionStorage.setItem('myValue', `${runs + 1}`);
 
@@ -46,12 +47,12 @@ let k="s1",l="m1";
 function print(num,num2){
     if(num2==1){
         k="s"+num;
-        document.getElementById(k).style.display="block";
+        document.getElementById(k).style.display="flex";
         
     }
       else {
         l="m"+num;
-        document.getElementById(l).style.display="block";
+        document.getElementById(l).style.display="flex";
     }
     
 }
